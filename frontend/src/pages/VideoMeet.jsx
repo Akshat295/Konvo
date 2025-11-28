@@ -16,8 +16,9 @@ import ChatIcon from "@mui/icons-material/Chat";
 import CloseIcon from "@mui/icons-material/Close";
 import { useNavigate, useParams } from "react-router";
 import background from "../assets/background.png";
+import server from "../environment";
 
-const server_url = "http://localhost:8000";
+const server_url = server;
 
 var connections = {}; // map of peerId -> RTCPeerConnection
 
