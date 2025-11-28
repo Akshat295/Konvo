@@ -192,9 +192,12 @@ body {
 }
 
 .hero-img {
-    width: 350px;
+    width: min(420px, 100%);
+    max-width: 100%;
+    height: auto;
     opacity: 0.9;
     filter: drop-shadow(0 0 30px rgba(231, 231, 32, 0.4));
+    transition: width 0.3s ease, height 0.3s ease;
 }
 
 /* RESPONSIVE */
@@ -210,8 +213,10 @@ body {
     }
     
     .dark-right-panel img {
-        height: 40vh;
-        width: 30vw;
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+        max-height: 50vh;
     }
     
     .name {
@@ -239,7 +244,8 @@ body {
     }
 
     .hero-img {
-        width: 280px;
+        width: min(320px, 80%);
+        height: auto;
     }
     
     .main-heading {
@@ -247,8 +253,10 @@ body {
     }
     
     .dark-right-panel img {
-        height: 35vh;
-        width: 50vw;
+        width: 100%;
+        max-width: 360px;
+        height: auto;
+        max-height: 45vh;
     }
     
     .dark-navbar {
@@ -320,9 +328,14 @@ body {
     }
     
     .dark-right-panel img {
-        height: 30vh;
-        width: 60vw;
-        max-width: 250px;
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+    }
+
+    .hero-img {
+        width: min(280px, 90%);
+        height: auto;
     }
     
     /* Landing page mobile */
@@ -395,8 +408,14 @@ body {
     }
     
     .dark-right-panel img {
-        height: 25vh;
-        width: 70vw;
+        width: 100%;
+        max-width: 240px;
+        height: auto;
+    }
+
+    .hero-img {
+        width: min(220px, 100%);
+        height: auto;
     }
     
     /* Landing page small mobile */
@@ -448,8 +467,12 @@ body {
 }
 
 .dark-right-panel img {
-  height: 50vh;
-  width: 25vw;
+  width: min(460px, 100%);
+  max-width: 100%;
+  height: auto;
+  max-height: 60vh;
+  object-fit: contain;
+  transition: width 0.3s ease, height 0.3s ease;
 }
 
 /* Wrapper */
